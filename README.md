@@ -1,36 +1,99 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🛒 E-commerce
 
-## Getting Started
+A modern e-commerce platform built with **Next.js**, featuring a responsive design, product filtering, cart functionality, and a complete checkout process.
 
-First, run the development server:
+🔗 **Live Demo**: [https://whatbytes-ecommerce.vercel.app](https://whatbytes-ecommerce.vercel.app)  <!-- Update this URL after deployment -->
 
+---
+
+## ✨ Features
+
+- **Responsive Design**: Fully responsive layout that works on mobile, tablet, and desktop
+- **Product Catalog**: Browse products with filtering by category, price range, and brand
+- **Product Search**: Search functionality with debounced input
+- **Product Details**: Detailed product pages with images, descriptions, and specifications
+- **Shopping Cart**: Add, remove, and update quantities of products in cart
+- **Checkout Process**: Multi-step checkout with shipping, payment, and order review
+- **Order Confirmation**: Confirmation page with order details and status tracking
+- **Real-time Cart Updates**: Cart updates in real-time across the application
+
+---
+
+## 📸 Screenshots
+
+### 🏠 Home Page  
+![Home Page](./public/screenshots/Home.png)
+
+### 📄 Product Detail  
+![Product Detail](./public/screenshots/product-detail(1).png)
+![Product Detail](./public/screenshots/product-detail(2).png)
+
+### 🛒 Shopping Cart  
+![Shopping Cart](./public/screenshots/cart.png)
+
+---
+
+## 🛠 Technologies Used
+
+- **Next.js 14** – React framework with App Router
+- **TypeScript** – Type-safe JavaScript
+- **Tailwind CSS** – Utility-first CSS framework
+- **React Hook Form** – Form validation and handling
+- **Lucide React** – Icon library
+- **React Context API** – State management for cart
+- **Next.js API Routes** – Backend API functionality
+- **Vercel** – Deployment platform
+
+---
+
+## 🚀 Getting Started
+
+### ✅ Prerequisites
+
+- Node.js 18.x or later
+- npm or yarn
+
+### 📦 Installation
+
+1.Clone the repository:
+
+```bash
+git clone https://github.com/yourusername/E-commerce.git
+cd E-commerce
+```
+
+2.Install dependencies:
+```bash
+npm install
+# or
+yarn install
+```
+
+3.Run the development server:
 ```bash
 npm run dev
 # or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+4.Open [http://localhost:3000](http://localhost:3000) in your browser to see the application.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Environment Variables
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+No environment variables are required for basic functionality. If you add features like authentication or external APIs, you may need to set up environment variables in your Vercel project settings.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Future Enhancements
 
-## Learn More
+- User authentication and account management
+- Wishlist functionality
+- Product reviews and ratings
+- Payment gateway integration (Stripe, PayPal)
+- Admin dashboard for product management
+- Order history and tracking
+- Email notifications
 
-To learn more about Next.js, take a look at the following resources:
+## Acknowledgments
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Product images from [Unsplash](https://unsplash.com)
+- Icons from [Lucide React](https://lucide.dev)
+- UI components inspired by [shadcn/ui](https://ui.shadcn.com)
+```
