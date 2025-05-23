@@ -2,7 +2,7 @@
 
 A modern e-commerce platform built with **Next.js**, featuring a responsive design, product filtering, cart functionality, and a complete checkout process.
 
-🔗 **Live Demo**: [E-commerce](https://e-commerce-kc0j8cnou-shashank-s-projects-579193ba.vercel.app)
+🔗 **Live Demo**: [E-commerce](https://e-commerce-nine-gules-45.vercel.app/)
 
 ---
 
