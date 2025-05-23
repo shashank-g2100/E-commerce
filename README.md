@@ -2,7 +2,7 @@
 
 A modern e-commerce platform built with **Next.js**, featuring a responsive design, product filtering, cart functionality, and a complete checkout process.
 
-🔗 **Live Demo**: [https://whatbytes-ecommerce.vercel.app](https://whatbytes-ecommerce.vercel.app)  <!-- Update this URL after deployment -->
+🔗 **Live Demo**: [E-commerce](https://e-commerce-8phw97vxh-shashank-s-projects-579193ba.vercel.app/)
 
 ---
 
