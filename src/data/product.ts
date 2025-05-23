@@ -9,7 +9,7 @@ export const products: Product[] = [
       "Comfortable running shoes with excellent cushioning and support for all your running needs. These lightweight shoes feature breathable mesh uppers and responsive cushioning for a smooth ride.",
     category: "clothing",
     brand: "Nike",
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/images/running-shoes.png",
     rating: 4,
   },
   {
@@ -20,7 +20,7 @@ export const products: Product[] = [
       "High-quality wireless headphones with noise cancellation and long battery life. Enjoy immersive sound with deep bass and crystal clear highs. The comfortable ear cups make these perfect for all-day listening.",
     category: "electronics",
     brand: "Sony",
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/images/wireless-headphones.png",
     rating: 5,
   },
   {
@@ -31,7 +31,7 @@ export const products: Product[] = [
       "Durable backpack with multiple compartments, perfect for daily use or hiking. Features padded laptop sleeve, water bottle pockets, and adjustable straps for maximum comfort.",
     category: "clothing",
     brand: "North Face",
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/images/backpack.png",
     rating: 4,
   },
   {
@@ -42,7 +42,7 @@ export const products: Product[] = [
       "Feature-rich smartwatch with health tracking, notifications, and long battery life. Track your workouts, monitor your heart rate, and stay connected with smartphone notifications. Water-resistant design for all-day wear.",
     category: "electronics",
     brand: "Apple",
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/images/smartwatch.png",
     rating: 5,
   },
   {
@@ -53,7 +53,7 @@ export const products: Product[] = [
       "Stylish sunglasses with UV protection and polarized lenses. These classic frames feature high-quality lenses that reduce glare and protect your eyes from harmful UV rays.",
     category: "clothing",
     brand: "Ray-Ban",
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/images/sunglasses.png",
     rating: 4,
   },
   {
@@ -64,7 +64,7 @@ export const products: Product[] = [
       "High-resolution digital camera with advanced features for professional photography. Capture stunning photos and videos with this versatile camera featuring a large sensor, fast autofocus, and 4K video recording capabilities.",
     category: "electronics",
     brand: "Canon",
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/images/digital-camera.png",
     rating: 5,
   },
   {
@@ -75,7 +75,7 @@ export const products: Product[] = [
       "Comfortable cotton t-shirt available in various colors and sizes. Made from premium soft cotton fabric that's breathable and durable. Perfect for everyday casual wear.",
     category: "clothing",
     brand: "H&M",
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/images/t-shirt.png",
     rating: 3,
   },
   {
@@ -86,7 +86,7 @@ export const products: Product[] = [
       "Latest smartphone with advanced camera, fast processor, and long battery life. Features a stunning display, powerful performance, and a versatile camera system that captures amazing photos in any lighting condition.",
     category: "electronics",
     brand: "Samsung",
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/images/smartphone.png",
     rating: 5,
   },
   {
@@ -97,7 +97,7 @@ export const products: Product[] = [
       "Adjustable desk lamp with multiple brightness levels and color temperatures. Perfect for your home office or study area. Features touch controls and flexible arm for directing light exactly where you need it.",
     category: "home",
     brand: "IKEA",
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/images/desk-lamp.png",
     rating: 4,
   },
   {
@@ -108,7 +108,7 @@ export const products: Product[] = [
       "Programmable coffee maker with thermal carafe to keep your coffee hot for hours. Features adjustable brew strength, auto-start function, and easy-to-clean design.",
     category: "home",
     brand: "Keurig",
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/images/coffee-maker.png",
     rating: 4,
   },
   {
@@ -119,7 +119,7 @@ export const products: Product[] = [
       "True wireless earbuds with active noise cancellation and water resistance. Enjoy up to 8 hours of listening time on a single charge, with 24 more hours from the charging case.",
     category: "electronics",
     brand: "Apple",
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/images/wireless-earbuds.png",
     rating: 5,
   },
   {
@@ -130,7 +130,7 @@ export const products: Product[] = [
       "Non-slip yoga mat with excellent cushioning and support. Perfect for yoga, pilates, or any floor exercise. The textured surface provides grip while the thick padding protects your joints.",
     category: "clothing",
     brand: "Lululemon",
-    image: "/placeholder.svg?height=200&width=200",
+    image: "/images/yoga-mat.png",
     rating: 4,
   },
 ]

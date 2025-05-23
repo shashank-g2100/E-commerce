@@ -6,7 +6,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { useCart } from "@/context/cart-context"
 import type { Product } from "@/types"
-import { Star, ShoppingCart, Eye } from "lucide-react"
+import { Eye, Star } from "lucide-react"
 
 export default function ProductCard({ product }: { product: Product }) {
   const { addToCart } = useCart()
@@ -26,12 +26,13 @@ export default function ProductCard({ product }: { product: Product }) {
     >
       <Link href={`/product/${product.id}`}>
         <div className="p-4">
-          <div className="aspect-square relative mb-4 overflow-hidden">
+          <div className="aspect-square relative mb-4 overflow-hidden bg-gray-50 rounded-lg">
             <Image
               src={product.image || "/placeholder.svg"}
               alt={product.title}
               fill
-              className={`object-contain transition-transform duration-500 ${isHovered ? "scale-110" : "scale-100"}`}
+              className={`object-cover transition-transform duration-500 ${isHovered ? "scale-110" : "scale-100"}`}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             />
           </div>
           <h3 className="font-medium text-gray-900 mb-1 truncate">{product.title}</h3>
@@ -49,9 +50,8 @@ export default function ProductCard({ product }: { product: Product }) {
           <div className="flex gap-2">
             <button
               onClick={handleAddToCart}
-              className="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-2 rounded flex items-center justify-center"
+              className="flex-1 bg-blue-600 hover:bg-blue-700 text-white py-2 rounded flex items-center justify-center text-sm font-medium"
             >
-              <ShoppingCart className="w-4 h-4 mr-2" />
               Add to Cart
             </button>
             <Link
