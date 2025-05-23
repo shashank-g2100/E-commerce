@@ -10,7 +10,6 @@ import { useDebounce } from "@/hooks/use-debounce"
 export default function SearchBar() {
   const router = useRouter()
   const [query, setQuery] = useState("")
-  const [isSearching, setIsSearching] = useState(false)
   const inputRef = useRef<HTMLInputElement>(null)
   const debouncedQuery = useDebounce(query, 300)
 
@@ -42,8 +41,6 @@ export default function SearchBar() {
         type="text"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
-        onFocus={() => setIsSearching(true)}
-        onBlur={() => setIsSearching(false)}
         placeholder="Search for products..."
         className="w-full py-2 px-4 pr-10 rounded text-black transition-all duration-200 focus:ring-2 focus:ring-blue-400 focus:outline-none"
       />

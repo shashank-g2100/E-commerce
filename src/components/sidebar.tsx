@@ -4,9 +4,9 @@ import type React from "react"
 
 import { useState, useEffect, useRef } from "react"
 import { useRouter, useSearchParams } from "next/navigation"
-import { RadioGroup, RadioGroupItem } from "./ui/radio-group"
-import { Label } from "./ui/label"
-import { Slider } from "./ui/slider"
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group"
+import { Label } from "@/components/ui/label"
+import { Slider } from "@/components/ui/slider"
 import { ChevronDown, ChevronUp } from "lucide-react"
 
 export default function Sidebar() {
@@ -43,7 +43,7 @@ export default function Sidebar() {
         setPriceRange([min, max])
       }
     }
-  }, []) // Empty dependency array means this only runs once on mount
+  }, [searchParams]) // Added searchParams to the dependency array
 
   // Update URL when filters change, but only when they're changed by user interaction
   useEffect(() => {
@@ -71,7 +71,7 @@ export default function Sidebar() {
 
     // Use replace instead of push to avoid adding to history stack
     router.replace(`/?${params.toString()}`, { scroll: false })
-  }, [category, priceRange, brand, router, searchParams])
+  }, [category, priceRange, brand, router, searchParams]) // searchParams was already in this dependency array
 
   const toggleSection = (section: keyof typeof expandedSections) => {
     setExpandedSections((prev) => ({
@@ -248,7 +248,7 @@ export default function Sidebar() {
               onChange={handlePriceInputChange}
               className="w-full p-2 border border-gray-300 rounded"
             />
-            {/* <span className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500">:</span> */}
+            <span className="absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-500">:</span>
           </div>
         </div>
       </div>

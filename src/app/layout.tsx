@@ -9,8 +9,11 @@ import { CartProvider } from "@/context/cart-context"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Whatbytes - E-commerce Store",
+  title: "E-commerce Store",
   description: "Shop the latest products at Whatbytes",
+  icons: {
+    icon: "/shopping-cart.svg", // or "/icon.png" depending on your file
+  },
 }
 
 export default function RootLayout({

@@ -6,17 +6,20 @@ import Link from "next/link"
 import { Star, ShoppingCart, Heart, Share2, Truck, Shield, RefreshCw } from "lucide-react"
 import { useCart } from "@/context/cart-context"
 import { products } from "@/data/product"
-import { notFound } from "next/navigation"
+import { notFound, useParams } from "next/navigation"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import ProductCard from "@/components/product-card" // Import ProductCard component
+import ProductCard from "@/components/product-card"
 
-export default function ProductPage({ params }: { params: { id: string } }) {
+export default function ProductPage() {
+  const params = useParams()
+  const productId = params.id as string
+
   const [quantity, setQuantity] = useState(1)
   const [selectedImage, setSelectedImage] = useState(0)
   const [isWishlisted, setIsWishlisted] = useState(false)
   const { addToCart } = useCart()
 
-  const product = products.find((p) => p.id === params.id)
+  const product = products.find((p) => p.id === productId)
 
   if (!product) {
     notFound()
