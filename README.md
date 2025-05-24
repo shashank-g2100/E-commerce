@@ -96,4 +96,3 @@ No environment variables are required for basic functionality. If you add featur
 - Product images from [Unsplash](https://unsplash.com)
 - Icons from [Lucide React](https://lucide.dev)
 - UI components inspired by [shadcn/ui](https://ui.shadcn.com)
-```
